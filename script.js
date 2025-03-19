@@ -1,20 +1,30 @@
-// Fetching the index.txt file from the hosted GitHub URL
-fetch('https://raw.githubusercontent.com/GoombaStudios/cs-skin-mgr/main/index.txt')
-    .then(response => response.text())
-    .then(data => {
-        const commands = parseCommands(data);
-        displayCommands(commands);
-    })
-    .catch(error => console.error('Error fetching the index.txt file:', error));
+// Check if the file can be loaded from the same directory
+function loadIndexFile() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'index.txt', true);  // Load the file index.txt from the same directory
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                const data = xhr.responseText;
+                const commands = parseCommands(data);
+                displayCommands(commands);
+            } else {
+                console.error('Error loading index.txt file');
+            }
+        }
+    };
+    xhr.send();
+}
 
 // Parse the commands from index.txt file format
 function parseCommands(data) {
     const commands = [];
     const lines = data.split('\n');
+
     for (let i = 0; i < lines.length; i++) {
         if (lines[i].trim() === '') continue; // Skip empty lines
         const knifeName = lines[i].trim();
-        const command = lines[++i].trim();
+        const command = lines[++i].trim(); // Get the command in the next line
         commands.push({ knifeName, command });
     }
     return commands;
@@ -41,7 +51,7 @@ function displayCommands(commands) {
     });
 }
 
-// Handle copy command
+// Handle copy command with animation
 function copyCommand(command, button) {
     navigator.clipboard.writeText(command)
         .then(() => {
@@ -68,3 +78,8 @@ function filterCommands() {
         }
     });
 }
+
+// Load the index.txt file when the page loads
+window.onload = function() {
+    loadIndexFile();
+};
