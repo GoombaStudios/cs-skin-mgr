@@ -1,5 +1,5 @@
 // Fetching the index.txt file from the hosted GitHub URL
-fetch('https://raw.githubusercontent.com/GoombaStudios/cs-skin-mgr/refs/heads/main/index.txt')
+fetch('https://raw.githubusercontent.com/GoombaStudios/cs-skin-mgr/main/index.txt')
     .then(response => response.text())
     .then(data => {
         const commands = parseCommands(data);
@@ -12,7 +12,7 @@ function parseCommands(data) {
     const commands = [];
     const lines = data.split('\n');
     for (let i = 0; i < lines.length; i++) {
-        if (lines[i].trim() === '') continue;
+        if (lines[i].trim() === '') continue; // Skip empty lines
         const knifeName = lines[i].trim();
         const command = lines[++i].trim();
         commands.push({ knifeName, command });
