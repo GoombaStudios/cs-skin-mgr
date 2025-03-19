@@ -1,0 +1,23 @@
+// Automatically generated list.js file 
+const commands = [ 
+    { knifeName: "Kukri Knife", command: "subclass_create 526; subclass_change 526 weapon_knife" }, 
+    { knifeName: "Butetrfly Knife", command: "subclass_create 515; subclass_change 515 weapon_knife" }, 
+    { knifeName: "Karambit Knife", command: "subclass_create 507; subclass_change 507 weapon_knife" }, 
+    { knifeName: "M9 Bayonet", command: "subclass_create 508; subclass_change 508 weapon_knife" }, 
+    { knifeName: "Skelleton Knife", command: "subclass_create 525; subclass_change 525 weapon_knife" }, 
+    { knifeName: "Nomad Knife", command: "subclass_create 521; subclass_change 521 weapon_knife" }, 
+    { knifeName: "Bayonet Knife", command: "subclass_create 500; subclass_change 500 weapon_knife" }, 
+    { knifeName: "Talon Knife", command: "subclass_create 523; subclass_change 523 weapon_knife" }, 
+    { knifeName: "Classic Knife", command: "subclass_create 503; subclass_change 503 weapon_knife" }, 
+    { knifeName: "Stilleto knife", command: "subclass_create 522; subclass_change 522 weapon_knife" }, 
+    { knifeName: "Flip Knife", command: "subclass_create 505; subclass_change 505 weapon_knife" }, 
+    { knifeName: "Ursus Knife", command: "subclass_create 519; subclass_change 519 weapon_knife" }, 
+    { knifeName: "Paracord Knife", command: "subclass_create 517; subclass_change 517 weapon_knife" }, 
+    { knifeName: "Survival Knife", command: "subclass_create 518; subclass_change 518 weapon_knife" }, 
+    { knifeName: "Huntsman Knife", command: "subclass_create 509; subclass_change 509 weapon_knife" }, 
+    { knifeName: "Falchion Knife", command: "subclass_create 512; subclass_change 512 weapon_knife" }, 
+    { knifeName: "Bowie Knife", command: "subclass_create 514; subclass_change 514 weapon_knife" }, 
+    { knifeName: "Shadow Daggers", command: "subclass_create 516; subclass_change 516 weapon_knife" }, 
+    { knifeName: "Gut Knife", command: "subclass_create 506; subclass_change 506 weapon_knife" }, 
+    { knifeName: "Navaja Knife", command: "subclass_create 520; subclass_change 520 weapon_knife" }, 
+]; 
