@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    color: white; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-size: 16px;
+    overflow-y: auto; /* Ensure page is scrollable */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+#search {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+#search::placeholder {
+    color: #aaa;
+}
+
+.command-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.command-card {
+    background-color: #444; /* Dark background for cards */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.command-card:hover {
+    transform: translateY(-5px);
+}
+
+.command-card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.command-card button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.command-card button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Copy Animation */
+.copy-animation {
+    animation: copyAnimation 1s ease-out;
+}
+
+/* Keyframes for the animation */
+@keyframes copyAnimation {
+    0% {
+        transform: scale(1);
+        background-color: #28a745; /* Green when copied */
+    }
+    100% {
+        transform: scale(1.1);
+        background-color: #007bff; /* Original blue */
+    }
+}

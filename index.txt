@@ -1,0 +1,60 @@
+
+Kukri Knife
+subclass_create 526; subclass_change 526 weapon_knife
+
+Butetrfly Knife
+subclass_create 515; subclass_change 515 weapon_knife
+
+Karambit Knife
+subclass_create 507; subclass_change 507 weapon_knife
+
+M9 Bayonet
+subclass_create 508; subclass_change 508 weapon_knife
+
+Skelleton Knife
+subclass_create 525; subclass_change 525 weapon_knife
+
+Nomad Knife
+subclass_create 521; subclass_change 521 weapon_knife
+
+Bayonet Knife
+subclass_create 500; subclass_change 500 weapon_knife
+
+Talon Knife
+subclass_create 523; subclass_change 523 weapon_knife
+
+Classic Knife
+subclass_create 503; subclass_change 503 weapon_knife
+
+Stilleto knife
+subclass_create 522; subclass_change 522 weapon_knife
+
+Flip Knife
+subclass_create 505; subclass_change 505 weapon_knife
+
+Ursus Knife
+subclass_create 519; subclass_change 519 weapon_knife
+
+Paracord Knife
+subclass_create 517; subclass_change 517 weapon_knife
+
+Survival Knife
+subclass_create 518; subclass_change 518 weapon_knife
+
+Huntsman Knife
+subclass_create 509; subclass_change 509 weapon_knife
+
+Falchion Knife
+subclass_create 512; subclass_change 512 weapon_knife
+
+Bowie Knife
+subclass_create 514; subclass_change 514 weapon_knife
+
+Shadow Daggers
+subclass_create 516; subclass_change 516 weapon_knife
+
+Gut Knife
+subclass_create 506; subclass_change 506 weapon_knife
+
+Navaja Knife
+subclass_create 520; subclass_change 520 weapon_knife

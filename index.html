@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Skin Manager</title>
+    
+    <!-- Link to the logo.png as the favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>CS Skin Manager</h1>
+
+        <!-- Search bar -->
+        <input type="text" id="search" placeholder="Search for a knife..." oninput="filterCommands()">
+        
+        <!-- Command List -->
+        <div class="command-list" id="command-list"></div>
+    </div>
+
+</body>
+</html>
