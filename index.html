@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS Skin Manager</title>
     <link rel="stylesheet" href="style.css">
-    <script src="list.js"></script> <!-- Load the generated list.js file -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="list.js"></script>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Header (Fixed at Top) -->
+    <div class="header">
         <h1>CS Skin Manager</h1>
         <input type="text" id="search" placeholder="Search for skins..." oninput="filterCommands()">
+    </div>
+
+    <!-- Scrollable Command List -->
+    <div class="command-container">
         <div id="command-list" class="command-list"></div>
     </div>
 </body>
