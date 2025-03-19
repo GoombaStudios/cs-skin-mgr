@@ -1,5 +1,5 @@
 // Fetching the index.txt file from the hosted GitHub URL
-fetch('https://raw.githubusercontent.com/username/cs-skin-manager/main/index.txt')
+fetch('https://raw.githubusercontent.com/GoombaStudios/cs-skin-mgr/refs/heads/main/index.txt')
     .then(response => response.text())
     .then(data => {
         const commands = parseCommands(data);
